@@ -14,6 +14,7 @@
 		3799D3262880EA1500584DDA /* pupsroadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3799D3252880EA1500584DDA /* pupsroadTests.swift */; };
 		3799D3302880EA1500584DDA /* pupsroadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3799D32F2880EA1500584DDA /* pupsroadUITests.swift */; };
 		3799D3322880EA1500584DDA /* pupsroadUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3799D3312880EA1500584DDA /* pupsroadUITestsLaunchTests.swift */; };
+		3799D33F2880EA6F00584DDA /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3799D33E2880EA6F00584DDA /* LocationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		3799D32B2880EA1500584DDA /* pupsroadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pupsroadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3799D32F2880EA1500584DDA /* pupsroadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pupsroadUITests.swift; sourceTree = "<group>"; };
 		3799D3312880EA1500584DDA /* pupsroadUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pupsroadUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3799D33E2880EA6F00584DDA /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		3799D3402880EAE800584DDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +97,12 @@
 		3799D3132880EA1300584DDA /* pupsroad */ = {
 			isa = PBXGroup;
 			children = (
+				3799D3402880EAE800584DDA /* Info.plist */,
 				3799D3142880EA1300584DDA /* pupsroadApp.swift */,
 				3799D3162880EA1300584DDA /* ContentView.swift */,
 				3799D3182880EA1500584DDA /* Assets.xcassets */,
 				3799D31A2880EA1500584DDA /* Preview Content */,
+				3799D33E2880EA6F00584DDA /* LocationViewModel.swift */,
 			);
 			path = pupsroad;
 			sourceTree = "<group>";
@@ -258,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3799D3172880EA1300584DDA /* ContentView.swift in Sources */,
+				3799D33F2880EA6F00584DDA /* LocationViewModel.swift in Sources */,
 				3799D3152880EA1300584DDA /* pupsroadApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +426,7 @@
 				DEVELOPMENT_TEAM = M3KMTD49RM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = pupsroad/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -429,7 +436,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = bside.onthe7.pupsroad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -449,6 +456,7 @@
 				DEVELOPMENT_TEAM = M3KMTD49RM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = pupsroad/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -458,7 +466,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = bside.onthe7.pupsroad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
