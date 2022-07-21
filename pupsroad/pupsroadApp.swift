@@ -7,25 +7,23 @@
 
 import SwiftUI
 import FirebaseCore
-
-class AppDelegate: NSObject, UIApplicationDelegate {
-    func application(_ application: UIApplication,
-                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        FirebaseApp.configure()
-        
-        return true
-    }
-}
+import KakaoSDKCommon
+import KakaoSDKAuth
 
 @main
 struct pupsroadApp: App {
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    init() {
+        FirebaseApp.configure()
+        KakaoSDK.initSDK(appKey: "22e4701e912ad1220534187a04a2d280")
+    }
     
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                MainView()
-            }
+            MainView().onOpenURL(perform: { url in
+                if (AuthApi.isKakaoTalkLoginUrl(url)) {
+                    AuthController.handleOpenUrl(url: url)
+                }
+            })
         }
     }
 }

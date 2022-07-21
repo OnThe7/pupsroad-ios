@@ -24,9 +24,9 @@ struct MainView: View {
                     })
                 
                 NavigationLink(
-                    destination: MapView(),
+                    destination: SignInView(),
                     label: {
-                        Text("카카오 Login")
+                        Text("로그인")
                     })
             }
             .navigationBarHidden(true)

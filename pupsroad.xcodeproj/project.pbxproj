@@ -19,6 +19,7 @@
 		371B3FDA2888D4E1008F39ED /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371B3FD92888D4E1008F39ED /* Metal.framework */; };
 		371B3FDC2888D629008F39ED /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B3FDB2888D629008F39ED /* MapView.swift */; };
 		371B3FDE2888DC5A008F39ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 371B3FDD2888DC5A008F39ED /* GoogleService-Info.plist */; };
+		371B3FE02888E8D1008F39ED /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B3FDF2888E8D1008F39ED /* SignInView.swift */; };
 		3799D3152880EA1300584DDA /* pupsroadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3799D3142880EA1300584DDA /* pupsroadApp.swift */; };
 		3799D3192880EA1500584DDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3799D3182880EA1500584DDA /* Assets.xcassets */; };
 		3799D31C2880EA1500584DDA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3799D31B2880EA1500584DDA /* Preview Assets.xcassets */; };
@@ -65,6 +66,7 @@
 		371B3FD92888D4E1008F39ED /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		371B3FDB2888D629008F39ED /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		371B3FDD2888DC5A008F39ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		371B3FDF2888E8D1008F39ED /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		3799D3112880EA1300584DDA /* pupsroad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pupsroad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3799D3142880EA1300584DDA /* pupsroadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pupsroadApp.swift; sourceTree = "<group>"; };
 		3799D3182880EA1500584DDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				371B3FD42888D3BE008F39ED /* MainView.swift */,
 				371B3FD62888D3DE008F39ED /* LocationTrakingView.swift */,
 				371B3FDB2888D629008F39ED /* MapView.swift */,
+				371B3FDF2888E8D1008F39ED /* SignInView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -472,6 +475,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				371B3FE02888E8D1008F39ED /* SignInView.swift in Sources */,
 				371B3FD72888D3DE008F39ED /* LocationTrakingView.swift in Sources */,
 				371B3FD52888D3BE008F39ED /* MainView.swift in Sources */,
 				371B3FDC2888D629008F39ED /* MapView.swift in Sources */,
@@ -631,6 +635,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B0382877DA08FE7C56E0A92A /* Pods-pupsroad.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_ARC = NO;
@@ -645,6 +650,8 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = pupsroad/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "위치 정보 사용";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "위치 정보 사용";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -668,6 +675,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1949436BEA71F25596183DB7 /* Pods-pupsroad.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_ARC = NO;
@@ -682,6 +690,8 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = pupsroad/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "위치 정보 사용";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "위치 정보 사용";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -747,7 +757,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A7F998B26082CE72337A3D24 /* Pods-pupsroad-pupsroadUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M3KMTD49RM;
@@ -766,7 +776,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 978FBCFABE435ECCD0CB23E2 /* Pods-pupsroad-pupsroadUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M3KMTD49RM;
