@@ -7,8 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		371B3FC52888D044008F39ED /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371B3FC42888D044008F39ED /* CoreLocation.framework */; };
+		371B3FC72888D04A008F39ED /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371B3FC62888D04A008F39ED /* QuartzCore.framework */; };
+		371B3FCB2888D068008F39ED /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 371B3FCA2888D05D008F39ED /* libsqlite3.tbd */; };
+		371B3FCC2888D072008F39ED /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 371B3FC92888D057008F39ED /* libxml2.tbd */; };
+		371B3FCD2888D079008F39ED /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 371B3FC82888D051008F39ED /* libc++.tbd */; };
+		371B3FCF2888D08A008F39ED /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371B3FCE2888D08A008F39ED /* SystemConfiguration.framework */; };
+		371B3FD12888D23D008F39ED /* DaumMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371B3FD02888D23D008F39ED /* DaumMap.framework */; };
+		371B3FD52888D3BE008F39ED /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B3FD42888D3BE008F39ED /* MainView.swift */; };
+		371B3FD72888D3DE008F39ED /* LocationTrakingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B3FD62888D3DE008F39ED /* LocationTrakingView.swift */; };
+		371B3FDA2888D4E1008F39ED /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371B3FD92888D4E1008F39ED /* Metal.framework */; };
+		371B3FDC2888D629008F39ED /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B3FDB2888D629008F39ED /* MapView.swift */; };
 		3799D3152880EA1300584DDA /* pupsroadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3799D3142880EA1300584DDA /* pupsroadApp.swift */; };
-		3799D3172880EA1300584DDA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3799D3162880EA1300584DDA /* ContentView.swift */; };
 		3799D3192880EA1500584DDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3799D3182880EA1500584DDA /* Assets.xcassets */; };
 		3799D31C2880EA1500584DDA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3799D31B2880EA1500584DDA /* Preview Assets.xcassets */; };
 		3799D3262880EA1500584DDA /* pupsroadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3799D3252880EA1500584DDA /* pupsroadTests.swift */; };
@@ -40,9 +50,21 @@
 /* Begin PBXFileReference section */
 		1949436BEA71F25596183DB7 /* Pods-pupsroad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pupsroad.release.xcconfig"; path = "Target Support Files/Pods-pupsroad/Pods-pupsroad.release.xcconfig"; sourceTree = "<group>"; };
 		215B0CA3E94FC9BC6137660B /* Pods-pupsroadTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pupsroadTests.release.xcconfig"; path = "Target Support Files/Pods-pupsroadTests/Pods-pupsroadTests.release.xcconfig"; sourceTree = "<group>"; };
+		371B3FC22888D02C008F39ED /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		371B3FC42888D044008F39ED /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		371B3FC62888D04A008F39ED /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		371B3FC82888D051008F39ED /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		371B3FC92888D057008F39ED /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		371B3FCA2888D05D008F39ED /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		371B3FCE2888D08A008F39ED /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		371B3FD02888D23D008F39ED /* DaumMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DaumMap.framework; path = DaumMap.embeddedframework/DaumMap.framework; sourceTree = "<group>"; };
+		371B3FD22888D292008F39ED /* pupsroad-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pupsroad-Bridging-Header.h"; sourceTree = "<group>"; };
+		371B3FD42888D3BE008F39ED /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		371B3FD62888D3DE008F39ED /* LocationTrakingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTrakingView.swift; sourceTree = "<group>"; };
+		371B3FD92888D4E1008F39ED /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		371B3FDB2888D629008F39ED /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		3799D3112880EA1300584DDA /* pupsroad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pupsroad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3799D3142880EA1300584DDA /* pupsroadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pupsroadApp.swift; sourceTree = "<group>"; };
-		3799D3162880EA1300584DDA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3799D3182880EA1500584DDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3799D31B2880EA1500584DDA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3799D3212880EA1500584DDA /* pupsroadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pupsroadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,7 +88,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				371B3FCB2888D068008F39ED /* libsqlite3.tbd in Frameworks */,
+				371B3FCF2888D08A008F39ED /* SystemConfiguration.framework in Frameworks */,
+				371B3FDA2888D4E1008F39ED /* Metal.framework in Frameworks */,
+				371B3FC72888D04A008F39ED /* QuartzCore.framework in Frameworks */,
+				371B3FCD2888D079008F39ED /* libc++.tbd in Frameworks */,
+				371B3FC52888D044008F39ED /* CoreLocation.framework in Frameworks */,
+				371B3FCC2888D072008F39ED /* libxml2.tbd in Frameworks */,
 				38B44F6137D3A562106DDB0B /* Pods_pupsroad.framework in Frameworks */,
+				371B3FD12888D23D008F39ED /* DaumMap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,9 +119,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		371B3FD32888D350008F39ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				371B3FD42888D3BE008F39ED /* MainView.swift */,
+				371B3FD62888D3DE008F39ED /* LocationTrakingView.swift */,
+				371B3FDB2888D629008F39ED /* MapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		371B3FD82888D436008F39ED /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3799D33E2880EA6F00584DDA /* LocationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		3799D3082880EA1200584DDA = {
 			isa = PBXGroup;
 			children = (
+				371B3FD22888D292008F39ED /* pupsroad-Bridging-Header.h */,
 				3799D3132880EA1300584DDA /* pupsroad */,
 				3799D3242880EA1500584DDA /* pupsroadTests */,
 				3799D32E2880EA1500584DDA /* pupsroadUITests */,
@@ -114,12 +163,12 @@
 		3799D3132880EA1300584DDA /* pupsroad */ = {
 			isa = PBXGroup;
 			children = (
+				371B3FD82888D436008F39ED /* ViewModel */,
+				371B3FD32888D350008F39ED /* View */,
 				3799D3402880EAE800584DDA /* Info.plist */,
 				3799D3142880EA1300584DDA /* pupsroadApp.swift */,
-				3799D3162880EA1300584DDA /* ContentView.swift */,
 				3799D3182880EA1500584DDA /* Assets.xcassets */,
 				3799D31A2880EA1500584DDA /* Preview Content */,
-				3799D33E2880EA6F00584DDA /* LocationViewModel.swift */,
 			);
 			path = pupsroad;
 			sourceTree = "<group>";
@@ -152,6 +201,15 @@
 		E54850D3ED3AB6B29DE7F618 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				371B3FD92888D4E1008F39ED /* Metal.framework */,
+				371B3FD02888D23D008F39ED /* DaumMap.framework */,
+				371B3FCE2888D08A008F39ED /* SystemConfiguration.framework */,
+				371B3FCA2888D05D008F39ED /* libsqlite3.tbd */,
+				371B3FC92888D057008F39ED /* libxml2.tbd */,
+				371B3FC82888D051008F39ED /* libc++.tbd */,
+				371B3FC62888D04A008F39ED /* QuartzCore.framework */,
+				371B3FC42888D044008F39ED /* CoreLocation.framework */,
+				371B3FC22888D02C008F39ED /* OpenGLES.framework */,
 				7B0E806ABAD883C094AD2261 /* Pods_pupsroad.framework */,
 				BDB338249AF4C25F9D678BC8 /* Pods_pupsroad_pupsroadUITests.framework */,
 				A293C6334DF829B2496F627E /* Pods_pupsroadTests.framework */,
@@ -169,7 +227,6 @@
 				739E0E0EF28E3DB5CE831B68 /* Pods-pupsroadTests.debug.xcconfig */,
 				215B0CA3E94FC9BC6137660B /* Pods-pupsroadTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -375,7 +432,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3799D3172880EA1300584DDA /* ContentView.swift in Sources */,
+				371B3FD72888D3DE008F39ED /* LocationTrakingView.swift in Sources */,
+				371B3FD52888D3BE008F39ED /* MainView.swift in Sources */,
+				371B3FDC2888D629008F39ED /* MapView.swift in Sources */,
 				3799D33F2880EA6F00584DDA /* LocationViewModel.swift in Sources */,
 				3799D3152880EA1300584DDA /* pupsroadApp.swift in Sources */,
 			);
@@ -534,11 +593,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"pupsroad/Preview Content\"";
 				DEVELOPMENT_TEAM = M3KMTD49RM;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DaumMap.embeddedframework",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = pupsroad/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -554,6 +618,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = bside.onthe7.pupsroad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/pupsroad-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -565,11 +630,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"pupsroad/Preview Content\"";
 				DEVELOPMENT_TEAM = M3KMTD49RM;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DaumMap.embeddedframework",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = pupsroad/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -585,6 +655,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = bside.onthe7.pupsroad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/pupsroad-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
