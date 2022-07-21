@@ -1,6 +1,0 @@
-framework module Pods_pupsroad_pupsroadUITests {
-  umbrella header "Pods-pupsroad-pupsroadUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -22,6 +22,12 @@ struct MainView: View {
                     label: {
                         Text("카카오 지도")
                     })
+                
+                NavigationLink(
+                    destination: MapView(),
+                    label: {
+                        Text("카카오 Login")
+                    })
             }
             .navigationBarHidden(true)
         }

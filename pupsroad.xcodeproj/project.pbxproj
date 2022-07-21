@@ -18,6 +18,7 @@
 		371B3FD72888D3DE008F39ED /* LocationTrakingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B3FD62888D3DE008F39ED /* LocationTrakingView.swift */; };
 		371B3FDA2888D4E1008F39ED /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371B3FD92888D4E1008F39ED /* Metal.framework */; };
 		371B3FDC2888D629008F39ED /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B3FDB2888D629008F39ED /* MapView.swift */; };
+		371B3FDE2888DC5A008F39ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 371B3FDD2888DC5A008F39ED /* GoogleService-Info.plist */; };
 		3799D3152880EA1300584DDA /* pupsroadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3799D3142880EA1300584DDA /* pupsroadApp.swift */; };
 		3799D3192880EA1500584DDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3799D3182880EA1500584DDA /* Assets.xcassets */; };
 		3799D31C2880EA1500584DDA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3799D31B2880EA1500584DDA /* Preview Assets.xcassets */; };
@@ -63,6 +64,7 @@
 		371B3FD62888D3DE008F39ED /* LocationTrakingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTrakingView.swift; sourceTree = "<group>"; };
 		371B3FD92888D4E1008F39ED /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		371B3FDB2888D629008F39ED /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		371B3FDD2888DC5A008F39ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3799D3112880EA1300584DDA /* pupsroad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pupsroad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3799D3142880EA1300584DDA /* pupsroadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pupsroadApp.swift; sourceTree = "<group>"; };
 		3799D3182880EA1500584DDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -140,7 +142,6 @@
 		3799D3082880EA1200584DDA = {
 			isa = PBXGroup;
 			children = (
-				371B3FD22888D292008F39ED /* pupsroad-Bridging-Header.h */,
 				3799D3132880EA1300584DDA /* pupsroad */,
 				3799D3242880EA1500584DDA /* pupsroadTests */,
 				3799D32E2880EA1500584DDA /* pupsroadUITests */,
@@ -163,6 +164,8 @@
 		3799D3132880EA1300584DDA /* pupsroad */ = {
 			isa = PBXGroup;
 			children = (
+				371B3FD22888D292008F39ED /* pupsroad-Bridging-Header.h */,
+				371B3FDD2888DC5A008F39ED /* GoogleService-Info.plist */,
 				371B3FD82888D436008F39ED /* ViewModel */,
 				371B3FD32888D350008F39ED /* View */,
 				3799D3402880EAE800584DDA /* Info.plist */,
@@ -241,6 +244,7 @@
 				3799D30D2880EA1300584DDA /* Sources */,
 				3799D30E2880EA1300584DDA /* Frameworks */,
 				3799D30F2880EA1300584DDA /* Resources */,
+				2AD3C770BBAD268E4527A605 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -278,6 +282,7 @@
 				3799D3272880EA1500584DDA /* Sources */,
 				3799D3282880EA1500584DDA /* Frameworks */,
 				3799D3292880EA1500584DDA /* Resources */,
+				E3B92A663A191694D8585C7B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -339,6 +344,7 @@
 			files = (
 				3799D31C2880EA1500584DDA /* Preview Assets.xcassets in Resources */,
 				3799D3192880EA1500584DDA /* Assets.xcassets in Resources */,
+				371B3FDE2888DC5A008F39ED /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +385,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2AD3C770BBAD268E4527A605 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pupsroad/Pods-pupsroad-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pupsroad/Pods-pupsroad-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pupsroad/Pods-pupsroad-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		91E2C05A20B55CE1723E9A1D /* [CP] Check Pods Manifest.lock */ = {
@@ -423,6 +446,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3B92A663A191694D8585C7B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pupsroad-pupsroadUITests/Pods-pupsroad-pupsroadUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pupsroad-pupsroadUITests/Pods-pupsroad-pupsroadUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pupsroad-pupsroadUITests/Pods-pupsroad-pupsroadUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -618,7 +658,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = bside.onthe7.pupsroad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/pupsroad-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/pupsroad/pupsroad-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -655,7 +695,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = bside.onthe7.pupsroad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/pupsroad-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/pupsroad/pupsroad-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
