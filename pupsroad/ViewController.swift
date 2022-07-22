@@ -6,21 +6,34 @@
 //
 
 import UIKit
+import SnapKit
 
 class ViewController: UIViewController {
-
+    
+    lazy var moveKakaoMapBtn: UIButton = {
+        let btn = UIButton()
+       
+        btn.setTitle("kakaoMap", for: .normal)
+        btn.setTitleColor(.black, for: .normal)
+        btn.addTarget(self, action: #selector(moveKakaoMap), for: .touchUpInside)
+        
+        return btn
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let test = UILabel()
+
+        view.backgroundColor = .white
+        view.addSubview(moveKakaoMapBtn)
         
-        view.backgroundColor = .white // 배경색
-        view.addSubview(test)
-        test.text = "text" // test를 위해서 출력할 라벨
-        test.translatesAutoresizingMaskIntoConstraints = false
-        test.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        test.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        moveKakaoMapBtn.snp.makeConstraints { (btn)  in
+            btn.center.equalTo(view)
+        }
     }
-
-
+    
+    @objc
+    func moveKakaoMap() {
+        self.navigationController?.pushViewController(MapViewController(), animated: true)
+    }
 }
 
