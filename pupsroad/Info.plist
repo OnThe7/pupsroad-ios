@@ -2,11 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>LSApplicationQueriesSchemes</key>
-	<array>
-		<string>kakaolink</string>
-		<string>kakaokompassauth</string>
-	</array>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -17,13 +12,22 @@
 				<string>kakao22e4701e912ad1220534187a04a2d280</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.966570516233-ct5vbclro76e3ag43ahjibg9u732uui7</string>
+			</array>
+		</dict>
 	</array>
 	<key>KAKAO_APP_KEY</key>
 	<string>22e4701e912ad1220534187a04a2d280</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>위치 정보 사용</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>위치 정보 사용</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>kakaolink</string>
+		<string>kakaokompassauth</string>
+	</array>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>location</string>

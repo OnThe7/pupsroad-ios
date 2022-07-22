@@ -6,9 +6,8 @@ target 'pupsroad' do
   use_frameworks!
 
   # Pods for pupsroad
-  pod 'FirebaseAnalytics'
   pod 'FirebaseAuth'
-  pod 'FirebaseFirestore'
+  pod 'GoogleSignIn'
   
   pod 'KakaoSDKCommon'
   pod 'KakaoSDKAuth'
