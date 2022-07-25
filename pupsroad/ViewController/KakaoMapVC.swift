@@ -1,5 +1,5 @@
 //
-//  MapViewController.swift
+//  KakaoMapVC.swift
 //  pupsroad
 //
 //  Created by KJH on 2022/07/22.
@@ -7,8 +7,8 @@
 
 import UIKit
 
-class MapViewController: UIViewController, MTMapViewDelegate {
-
+class KakaoMapVC: UIViewController, MTMapViewDelegate {
+    
     var mapView: MTMapView!
     
     override func viewDidLoad() {

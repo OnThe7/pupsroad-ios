@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		371B3FEE288A2763008F39ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B3FED288A2763008F39ED /* AppDelegate.swift */; };
 		371B3FF0288A2763008F39ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B3FEF288A2763008F39ED /* SceneDelegate.swift */; };
-		371B3FF2288A2763008F39ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B3FF1288A2763008F39ED /* ViewController.swift */; };
+		371B3FF2288A2763008F39ED /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B3FF1288A2763008F39ED /* MainVC.swift */; };
 		371B3FF7288A2765008F39ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 371B3FF6288A2765008F39ED /* Assets.xcassets */; };
 		371B3FFA288A2765008F39ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 371B3FF8288A2765008F39ED /* LaunchScreen.storyboard */; };
 		371B4005288A2766008F39ED /* pupsroadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B4004288A2766008F39ED /* pupsroadTests.swift */; };
@@ -60,7 +60,15 @@
 		37AA4339288A771400E09E72 /* daum_th_line.png in Resources */ = {isa = PBXBuildFile; fileRef = 37AA431D288A771400E09E72 /* daum_th_line.png */; };
 		37AA433A288A771400E09E72 /* map_pin_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 37AA431E288A771400E09E72 /* map_pin_shadow.png */; };
 		37AA433B288A771400E09E72 /* DaumMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AA431F288A771400E09E72 /* DaumMap.framework */; };
-		37AA433D288A777900E09E72 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AA433C288A777900E09E72 /* MapViewController.swift */; };
+		37AA433D288A777900E09E72 /* KakaoMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AA433C288A777900E09E72 /* KakaoMapVC.swift */; };
+		37AA433F288A821200E09E72 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AA433E288A821200E09E72 /* SignInVC.swift */; };
+		37D27BAC288E1900009F4AD7 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D27BAB288E1900009F4AD7 /* Environment.swift */; };
+		37D27BB0288E1E2B009F4AD7 /* KakaoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 37D27BAF288E1E2B009F4AD7 /* KakaoSDK */; };
+		37D27BB2288E1E2B009F4AD7 /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 37D27BB1288E1E2B009F4AD7 /* KakaoSDKAuth */; };
+		37D27BB4288E1E2B009F4AD7 /* KakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 37D27BB3288E1E2B009F4AD7 /* KakaoSDKCommon */; };
+		37D27BB6288E1E2B009F4AD7 /* RxKakaoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 37D27BB5288E1E2B009F4AD7 /* RxKakaoSDK */; };
+		37D27BB8288E1E2B009F4AD7 /* RxKakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 37D27BB7288E1E2B009F4AD7 /* RxKakaoSDKAuth */; };
+		37D27BBA288E1E2B009F4AD7 /* RxKakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 37D27BB9288E1E2B009F4AD7 /* RxKakaoSDKCommon */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +92,7 @@
 		371B3FEA288A2763008F39ED /* 댕스로드 (DEV).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "댕스로드 (DEV).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		371B3FED288A2763008F39ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		371B3FEF288A2763008F39ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		371B3FF1288A2763008F39ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		371B3FF1288A2763008F39ED /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		371B3FF6288A2765008F39ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		371B3FF9288A2765008F39ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		371B3FFB288A2765008F39ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -141,7 +149,9 @@
 		37AA431D288A771400E09E72 /* daum_th_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = daum_th_line.png; sourceTree = "<group>"; };
 		37AA431E288A771400E09E72 /* map_pin_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_pin_shadow.png; sourceTree = "<group>"; };
 		37AA431F288A771400E09E72 /* DaumMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DaumMap.framework; sourceTree = "<group>"; };
-		37AA433C288A777900E09E72 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		37AA433C288A777900E09E72 /* KakaoMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoMapVC.swift; sourceTree = "<group>"; };
+		37AA433E288A821200E09E72 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		37D27BAB288E1900009F4AD7 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,14 +165,20 @@
 				37AA42E0288A6C8D00E09E72 /* RxSwift in Frameworks */,
 				37AA42F8288A765700E09E72 /* libc++.tbd in Frameworks */,
 				37AA42EC288A75FE00E09E72 /* Metal.framework in Frameworks */,
+				37D27BB4288E1E2B009F4AD7 /* KakaoSDKCommon in Frameworks */,
 				37AA42F0288A760F00E09E72 /* CoreLocation.framework in Frameworks */,
+				37D27BB2288E1E2B009F4AD7 /* KakaoSDKAuth in Frameworks */,
 				37AA42DE288A6C8D00E09E72 /* RxCocoa in Frameworks */,
 				37AA42E7288A709B00E09E72 /* FirebaseAnalytics in Frameworks */,
 				37AA42E5288A709700E09E72 /* FirebaseAuth in Frameworks */,
 				37AA42EE288A760800E09E72 /* SystemConfiguration.framework in Frameworks */,
+				37D27BB0288E1E2B009F4AD7 /* KakaoSDK in Frameworks */,
 				37AA42F7288A765000E09E72 /* libxml2.tbd in Frameworks */,
+				37D27BB8288E1E2B009F4AD7 /* RxKakaoSDKAuth in Frameworks */,
+				37D27BBA288E1E2B009F4AD7 /* RxKakaoSDKCommon in Frameworks */,
 				37AA42F6288A764200E09E72 /* libsqlite3.tbd in Frameworks */,
 				37AA42E9288A70A500E09E72 /* GoogleSignIn in Frameworks */,
+				37D27BB6288E1E2B009F4AD7 /* RxKakaoSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +224,7 @@
 		371B3FEC288A2763008F39ED /* pupsroad */ = {
 			isa = PBXGroup;
 			children = (
+				37D27BAA288E18ED009F4AD7 /* Util */,
 				371B4040288A41CC008F39ED /* ViewController */,
 				371B403F288A41C2008F39ED /* ViewModel */,
 				371B403D288A413F008F39ED /* View */,
@@ -215,10 +232,8 @@
 				371B402E288A30C2008F39ED /* Config */,
 				371B3FED288A2763008F39ED /* AppDelegate.swift */,
 				371B3FEF288A2763008F39ED /* SceneDelegate.swift */,
-				371B3FF1288A2763008F39ED /* ViewController.swift */,
 				371B3FF6288A2765008F39ED /* Assets.xcassets */,
 				371B3FF8288A2765008F39ED /* LaunchScreen.storyboard */,
-				37AA433C288A777900E09E72 /* MapViewController.swift */,
 			);
 			path = pupsroad;
 			sourceTree = "<group>";
@@ -268,6 +283,9 @@
 		371B4040288A41CC008F39ED /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				37AA433C288A777900E09E72 /* KakaoMapVC.swift */,
+				371B3FF1288A2763008F39ED /* MainVC.swift */,
+				37AA433E288A821200E09E72 /* SignInVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -346,6 +364,14 @@
 			path = Headers;
 			sourceTree = "<group>";
 		};
+		37D27BAA288E18ED009F4AD7 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				37D27BAB288E1900009F4AD7 /* Environment.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -369,6 +395,12 @@
 				37AA42E4288A709700E09E72 /* FirebaseAuth */,
 				37AA42E6288A709B00E09E72 /* FirebaseAnalytics */,
 				37AA42E8288A70A500E09E72 /* GoogleSignIn */,
+				37D27BAF288E1E2B009F4AD7 /* KakaoSDK */,
+				37D27BB1288E1E2B009F4AD7 /* KakaoSDKAuth */,
+				37D27BB3288E1E2B009F4AD7 /* KakaoSDKCommon */,
+				37D27BB5288E1E2B009F4AD7 /* RxKakaoSDK */,
+				37D27BB7288E1E2B009F4AD7 /* RxKakaoSDKAuth */,
+				37D27BB9288E1E2B009F4AD7 /* RxKakaoSDKCommon */,
 			);
 			productName = pupsroad;
 			productReference = 371B3FEA288A2763008F39ED /* 댕스로드 (DEV).app */;
@@ -447,6 +479,8 @@
 				37AA42D6288A6B9700E09E72 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				37AA42DB288A6BEE00E09E72 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 				37AA42DC288A6C8D00E09E72 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				37D27BAD288E1CE1009F4AD7 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
+				37D27BAE288E1D1F009F4AD7 /* XCRemoteSwiftPackageReference "kakao-ios-sdk-rx" */,
 			);
 			productRefGroup = 371B3FEB288A2763008F39ED /* Products */;
 			projectDirPath = "";
@@ -521,10 +555,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				371B3FF2288A2763008F39ED /* ViewController.swift in Sources */,
+				371B3FF2288A2763008F39ED /* MainVC.swift in Sources */,
+				37D27BAC288E1900009F4AD7 /* Environment.swift in Sources */,
 				371B3FEE288A2763008F39ED /* AppDelegate.swift in Sources */,
 				371B3FF0288A2763008F39ED /* SceneDelegate.swift in Sources */,
-				37AA433D288A777900E09E72 /* MapViewController.swift in Sources */,
+				37AA433F288A821200E09E72 /* SignInVC.swift in Sources */,
+				37AA433D288A777900E09E72 /* KakaoMapVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,8 +738,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/DaumMap.embeddedframework",
 				);
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = pupsroad/Config/Info.plist;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "${PROJECT_DIR}/pupsroad/Config/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -712,7 +748,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
 				PRODUCT_NAME = "$(APP_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -736,8 +772,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/DaumMap.embeddedframework",
 				);
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = pupsroad/Config/Info.plist;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "${PROJECT_DIR}/pupsroad/Config/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -746,7 +782,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
 				PRODUCT_NAME = "$(APP_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -911,8 +947,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/DaumMap.embeddedframework",
 				);
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = pupsroad/Config/Info.plist;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "${PROJECT_DIR}/pupsroad/Config/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -921,7 +957,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
 				PRODUCT_NAME = "$(APP_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1046,8 +1082,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/DaumMap.embeddedframework",
 				);
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = pupsroad/Config/Info.plist;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "${PROJECT_DIR}/pupsroad/Config/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1056,7 +1092,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
 				PRODUCT_NAME = "$(APP_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1175,8 +1211,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/DaumMap.embeddedframework",
 				);
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = pupsroad/Config/Info.plist;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "${PROJECT_DIR}/pupsroad/Config/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1185,7 +1221,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
 				PRODUCT_NAME = "$(APP_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1304,8 +1340,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/DaumMap.embeddedframework",
 				);
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = pupsroad/Config/Info.plist;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "${PROJECT_DIR}/pupsroad/Config/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1314,7 +1350,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
 				PRODUCT_NAME = "$(APP_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1454,6 +1490,22 @@
 				minimumVersion = 6.0.0;
 			};
 		};
+		37D27BAD288E1CE1009F4AD7 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kakao/kakao-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		37D27BAE288E1D1F009F4AD7 /* XCRemoteSwiftPackageReference "kakao-ios-sdk-rx" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kakao/kakao-ios-sdk-rx";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1486,6 +1538,36 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 37AA42DB288A6BEE00E09E72 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignIn;
+		};
+		37D27BAF288E1E2B009F4AD7 /* KakaoSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37D27BAD288E1CE1009F4AD7 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDK;
+		};
+		37D27BB1288E1E2B009F4AD7 /* KakaoSDKAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37D27BAD288E1CE1009F4AD7 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKAuth;
+		};
+		37D27BB3288E1E2B009F4AD7 /* KakaoSDKCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37D27BAD288E1CE1009F4AD7 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKCommon;
+		};
+		37D27BB5288E1E2B009F4AD7 /* RxKakaoSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37D27BAE288E1D1F009F4AD7 /* XCRemoteSwiftPackageReference "kakao-ios-sdk-rx" */;
+			productName = RxKakaoSDK;
+		};
+		37D27BB7288E1E2B009F4AD7 /* RxKakaoSDKAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37D27BAE288E1D1F009F4AD7 /* XCRemoteSwiftPackageReference "kakao-ios-sdk-rx" */;
+			productName = RxKakaoSDKAuth;
+		};
+		37D27BB9288E1E2B009F4AD7 /* RxKakaoSDKCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37D27BAE288E1D1F009F4AD7 /* XCRemoteSwiftPackageReference "kakao-ios-sdk-rx" */;
+			productName = RxKakaoSDKCommon;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
