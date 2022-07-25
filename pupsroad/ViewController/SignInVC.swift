@@ -7,6 +7,9 @@
 
 import SnapKit
 import RxSwift
+import FirebaseCore
+import FirebaseAuth
+import GoogleSignIn
 import KakaoSDKCommon
 import RxKakaoSDKCommon
 import KakaoSDKAuth
@@ -85,6 +88,32 @@ class SignInVC: UIViewController {
     
     @objc
     func googleSignIn() {
+        guard let clientID = FirebaseApp.app()?.options.clientID else { return }
+        
+        let config = GIDConfiguration(clientID: clientID)
+        
+        
+        GIDSignIn.sharedInstance.signIn(with: config, presenting: self) { user, error in
+            
+            if let error = error {
+                print("ERROR Google Sign In \(error.localizedDescription)")
+                return
+            }
+            
+            guard
+                let authentication = user?.authentication,
+                let idToken = authentication.idToken
+            else {
+                return
+            }
+            
+            let credential = GoogleAuthProvider.credential(withIDToken: idToken,
+                                                           accessToken: authentication.accessToken)
+            
+            Auth.auth().signIn(with: credential) { _, _ in
+                
+            }
+        }
     }
 }
 

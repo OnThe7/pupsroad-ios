@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseCore
+import GoogleSignIn
 import RxKakaoSDKCommon
 import RxKakaoSDKAuth
 import KakaoSDKAuth
@@ -25,8 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if (AuthApi.isKakaoTalkLoginUrl(url)) {
             return AuthController.rx.handleOpenUrl(url: url)
         }
-
-        return false
+        
+        return GIDSignIn.sharedInstance.handle(url)
     }
     
     // MARK: UISceneSession Lifecycle
